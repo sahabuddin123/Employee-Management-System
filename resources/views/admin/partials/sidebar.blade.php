@@ -14,8 +14,8 @@
             </a>
         </li>
         <li>
-            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.department.index' ? 'active' : '' }}"
-            href="{{ route('admin.department.index') }}">
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.departments.index' ? 'active' : '' }}"
+            href="{{ route('admin.departments.index') }}">
             <i class="app-menu__icon fa fa-tags"></i>
             <span class="app-menu__label">Department</span>
             </a>

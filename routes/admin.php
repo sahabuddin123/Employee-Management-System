@@ -17,14 +17,14 @@ Route::group(['prefix'  =>  'admin'], function () {
         /**********
          * Department Controller
          * ******** */
-        Route::group(['prefix'  =>   'department'], function() {
+        Route::group(['prefix'  =>   'departments'], function() {
  
-            Route::get('/', 'Admin\DepartmentController@index')->name('admin.department.index');
-            Route::get('/create', 'Admin\DepartmentController@create')->name('admin.department.create');
-            Route::post('/store', 'Admin\DepartmentController@store')->name('admin.department.store');
-            Route::get('/{id}/edit', 'Admin\DepartmentController@edit')->name('admin.department.edit');
-            Route::post('/update', 'Admin\DepartmentController@update')->name('admin.department.update');
-            Route::get('/{id}/delete', 'Admin\DepartmentController@delete')->name('admin.department.delete');
+            Route::get('/', 'Admin\DepartmentController@index')->name('admin.departments.index');
+            Route::get('/create', 'Admin\DepartmentController@create')->name('admin.departments.create');
+            Route::post('/store', 'Admin\DepartmentController@store')->name('admin.departments.store');
+            Route::get('/{id}/edit', 'Admin\DepartmentController@edit')->name('admin.departments.edit');
+            Route::post('/update', 'Admin\DepartmentController@update')->name('admin.departments.update');
+            Route::get('/{id}/delete', 'Admin\DepartmentController@delete')->name('admin.departments.delete');
          
         });
     });
