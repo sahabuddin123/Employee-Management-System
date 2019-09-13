@@ -61,7 +61,7 @@ public function createDepartment(array $params){
          
         $name = $collection->has('dept_name') ? 1 : 0;
  
-        $merge = $collection->merge(compact('dept_name'));
+        $merge = $collection->merge(compact('name'));
  
         $department = new Department($merge->all());
  
@@ -84,7 +84,7 @@ public function updateDepartment(array $params){
     $collection = collect($params)->except('_token');
     $name = $collection->has('dept_name') ? 1 : 0;
  
-    $merge = $collection->merge(compact('dept_name'));
+    $merge = $collection->merge(compact('name'));
  
     $department->update($merge->all());
  
