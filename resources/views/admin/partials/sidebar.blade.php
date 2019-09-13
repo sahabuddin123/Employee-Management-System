@@ -4,7 +4,13 @@
         <li>
             <a class="app-menu__item {{ Route::currentRouteName() == 'admin.dashboard' ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
                 <i class="app-menu__icon fa fa-dashboard"></i>
-                <span class="app-menu__label">Dashboard</span>
+                <span class="app-menu__label">EMS</span>
+            </a>
+        </li>
+        <li>
+            <a class="app-menu__item {{ Route::currentRouteName() == 'admin.dashboard' ? 'active' : '' }}" href="{{ route('admin.dashboard') }}">
+                <i class="app-menu__icon fa fa-user"></i>
+                <span class="app-menu__label">Admin</span>
             </a>
         </li>
         <li>
