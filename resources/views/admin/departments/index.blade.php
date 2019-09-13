@@ -22,16 +22,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($departments as $category)
-                                @if ($category->id != 0)
+                            @foreach($departments as $department)
+                                @if ($department->id != 0)
                                     <tr>
-                                        <td>{{ $category->id }}</td>
-                                        <td>{{ $category->dept_name }}</td>
+                                        <td>{{ $department->id }}</td>
+                                        <td>{{ $department->dept_name }}</td>
                                         
                                         <td class="text-center">
                                             <div class="btn-group" role="group" aria-label="Second group">
-                                                <a href="{{ route('admin.departments.edit', $category->id) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
-                                                <a href="{{ route('admin.departments.delete', $category->id) }}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                                                <a href="{{ route('admin.departments.edit', $department->id) }}" class="btn btn-sm btn-primary"><i class="fa fa-edit"></i></a>
+                                                <a href="{{ route('admin.departments.delete', $department->id) }}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                                             </div>
                                         </td>
                                     </tr>
