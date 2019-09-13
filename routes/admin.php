@@ -9,6 +9,8 @@ Route::group(['prefix'  =>  'admin'], function () {
     Route::group(['middleware' => ['auth:admin']], function () {
  
         Route::get('/', function () {
+            $fatch = DB::select(' SELECT COUNT(id) FROM departments');
+            
             return view('admin.dashboard.index');
         })->name('admin.dashboard');
  
